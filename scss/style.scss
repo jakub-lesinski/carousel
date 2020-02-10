@@ -1,0 +1,64 @@
+@import "./normalize";
+
+body {
+    background-color: #000000;
+}
+
+.slides {
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+}
+
+.sliders {
+    height: 100%;
+
+    .next {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+    }
+
+    .prev {
+        position: absolute;
+        left: 26%;
+        top: 50%;
+    }
+
+    .next,
+    .prev {
+        border: none;
+        background: none;
+        color: #ffffff;
+        font-size: 120px;
+        font-weight: bold;
+    }
+}
+
+.dots {
+    display: flex;
+    position: absolute;
+    top: 140%;
+    left: 47%;
+}
+
+
+.dot {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: none;
+    
+    &:first-of-type {
+        margin-left: 0;
+    }
+}
+
+.active {
+    background-color: #ffffff;
+}
+
